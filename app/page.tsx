@@ -167,8 +167,8 @@ export default function Portfolio() {
 }
 
 function Hero() {
-  const [text, setText] = useState('')
   const fullText = "Cloud Engineer & Full Stack Developer"
+  const [text, setText] = useState(fullText)
   
   useEffect(() => {
     let i = 0
