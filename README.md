@@ -2,9 +2,19 @@
 
 This is a personal portfolio website showcasing my projects, skills, and contact information. The website is built using Next.js and deployed on Vercel.
 
+
 ## Website
 
 The website is live at [Vercel](https://portfoliowebsite-gamma-blush.vercel.app/)
+
+![Home Page](screenshots/1.png)
+*Home Page*
+
+![About Page](screenshots/2.png)
+*About Page*
+
+![Projects Page](screenshots/3.png)
+*Projects Page*
 
 ## Features
 
