@@ -167,9 +167,10 @@ export default function Portfolio() {
 }
 
 function Hero() {
-  const fullText = "Cloud Engineer & Full Stack Developer"
-  const [text, setText] = useState(fullText)
   
+  const [text, setText] = useState("")
+  const fullText = "Cloud Engineer & Full Stack Developer"
+
   useEffect(() => {
     let i = 0
     const typingEffect = setInterval(() => {
@@ -183,6 +184,7 @@ function Hero() {
 
     return () => clearInterval(typingEffect)
   }, [])
+  console.log(text)
 
   return (
     <section className="min-h-screen flex items-center justify-center text-center">
@@ -199,7 +201,7 @@ function Hero() {
         >
           Harsh Kumar
         </motion.h1>
-        <h2 className="text-2xl text-gray-300 mb-8 h-8">{text}</h2>
+        <h2 className="text-2xl text-gray-300 mb-8 h-8">{fullText}</h2>
         <motion.a
           href="#contact"
           className="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition-colors duration-300"
