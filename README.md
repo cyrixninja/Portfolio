@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+This is a personal portfolio website showcasing my projects, skills, and contact information. The website is built using Next.js and deployed on Vercel.
+
+## Website
+
+The website is live at [Vercel](https://portfoliowebsite-gamma-blush.vercel.app/)
+
+## Features
+
+- **Home Page**: Introduction and overview.
+- **About**: Information about me, my background, and my skills.
+- **Projects**: A showcase of my projects with descriptions and links.
+- **Contact**: A contact form to get in touch with me.
+
+## Technologies Used
+
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Framer Motion**: Library for animations.
+- **Vercel**: Platform for deployment.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/cyrixninja/Portfolio
+    cd Portfolio
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run the development server**:
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Open your browser** and visit [http://localhost:3000](http://localhost:3000) to see the result.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The website is deployed on Vercel. To deploy your own version, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Push your code to GitHub**.
+2. **Create a new project on Vercel** and link it to your GitHub repository.
+3. **Configure your project settings** and deploy.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to reach out to me via the contact form on the website or through my [LinkedIn](https://linkedin.com/in/cyrixninja) profile.
+
+---
+
+Thank you for visiting my portfolio website!
