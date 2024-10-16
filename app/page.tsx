@@ -65,7 +65,7 @@ function AboutCard() {
         <p className="text-gray-100 text-center mb-4">
           I am a Full Stack Developer, Cloud Engineer, and Cybersecurity enthusiast with a strong focus on building secure and scalable backend solutions. Specializing in Python, AWS, and Azure, I design, develop, and deploy web applications that meet modern security and performance standards.
           With a deep understanding of both front-end and back-end technologies, I create full-stack applications that integrate seamlessly with cloud services. My expertise in cloud platforms like AWS and Azure enables me to architect, automate, and optimize cloud infrastructures for reliable and scalable deployments. Additionally, my passion for cybersecurity drives me to incorporate best practices in securing applications, data, and cloud environments.
-          I am constantly expanding my knowledge in cloud computing and cybersecurity, ensuring that the solutions I provide are cutting-edge and secure. Whether it's creating a dynamic web app, deploying microservices, or safeguarding systems, I thrive on delivering high-quality results that drive innovation and trust.
+          I am constantly expanding my knowledge in cloud computing and cybersecurity, ensuring that the solutions I provide are cutting-edge and secure. Whether it&apos;s creating a dynamic web app, deploying microservices, or safeguarding systems, I thrive on delivering high-quality results that drive innovation and trust.
         </p>
         <div className="flex space-x-4">
           <a href="https://github.com/cyrixninja" target="_blank" rel="noopener noreferrer">
