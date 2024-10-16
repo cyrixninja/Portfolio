@@ -199,7 +199,7 @@ function Hero() {
         >
           Harsh Kumar
         </motion.h1>
-        <h2 className="text-2xl text-gray-300 mb-8 h-8">{fullText}</h2>
+        <h2 className="text-2xl text-gray-300 mb-8 h-8">{text}</h2>
         <motion.a
           href="#contact"
           className="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition-colors duration-300"
