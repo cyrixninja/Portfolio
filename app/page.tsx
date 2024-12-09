@@ -283,6 +283,24 @@ function Projects() {
       imageUrl: 'https://socialify.git.ci/cyrixninja/Snack-It-Up/image?description=1&font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Light', // Replace with your project image URL
       link: 'https://github.com/cyrixninja/Snack-It-Up' // Replace with your project link
     },
+    { 
+      title: 'Dragon Slayer Game', 
+      description: 'Test your wits and bravery in a quest to defeat the mighty dragon!',
+      imageUrl: 'https://github.com/cyrixninja/DragonSlayerGame/raw/main/Screenshots/1.png', // Replace with your project image URL
+      link: 'https://github.com/cyrixninja/DragonSlayerGame' // Replace with your project link
+    },
+    { 
+      title: 'Repurpose.It', 
+      description: 'AI-powered Sustainable Repurposing Platform',
+      imageUrl: 'https://github.com/cyrixninja/Repurpose.It/raw/main/screenshots/banner.png', // Replace with your project image URL
+      link: 'https://github.com/cyrixninja/Repurpose.It' // Replace with your project link
+    },
+    { 
+      title: 'CarbonCalc', 
+      description: 'Carbon Footprint Tracker built using ASP.NET',
+      imageUrl: 'https://github.com/cyrixninja/CarbonCalc/raw/main/wwwroot/images/carboncalc.gif', // Replace with your project image URL
+      link: 'https://github.com/cyrixninja/CarbonCalc' // Replace with your project link
+    },
   ]
 
   return (
