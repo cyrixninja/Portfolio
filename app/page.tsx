@@ -151,6 +151,9 @@ export default function Portfolio() {
           <section id="projects">
             <Projects />
           </section>
+          <section id="certificates">
+          <Certificates />
+        </section>
           <section id="contact">
             <Contact />
           </section>
@@ -420,6 +423,93 @@ function Contact() {
             Send Message
           </motion.button>
         </form>
+      </motion.div>
+    </section>
+  )
+}
+
+
+function Certificates() {
+  const certificates = [
+    { 
+      title: 'Microsoft Certified Azure AI Fundamentals', 
+      description: 'Microsoft Azure Certification',
+      imageUrl: 'https://cyrixninja.s3.us-east-1.amazonaws.com/Portfolio/Certificates/Microsoft+Certified+Azure+AI+Fundamentals.png', 
+      link: 'https://learn.microsoft.com/api/credentials/share/en-us/cyrixninja-6265/F3AE5D2A7B0C4522?sharingId=B47E0DC9ADFF111' 
+    },
+    { 
+      title: 'Machine Learning on Google Cloud', 
+      description: 'Google Cloud',
+      imageUrl: 'https://cyrixninja.s3.us-east-1.amazonaws.com/Portfolio/Certificates/Machine+Learning+on+Google+Cloud.png', 
+      link: 'https://coursera.org/share/489376a21e2fd26cb123f8960d48bc00'
+    },
+    { 
+      title: 'Google Cybersecurity', 
+      description: 'Cybersecurity',
+      imageUrl: 'https://cyrixninja.s3.us-east-1.amazonaws.com/Portfolio/Certificates/Google+Cybersecurity.png',
+      link: 'https://coursera.org/share/88c2a3f4ff6a93fac3ed3a233933649e' 
+    },
+    { 
+      title: 'Google AI Essentials', 
+      description: 'Cybersecurity',
+      imageUrl: 'https://cyrixninja.s3.us-east-1.amazonaws.com/Portfolio/Certificates/Google+AI+Essentials.png',
+      link: 'https://coursera.org/share/2bb282a75a2222f0159534f13cb3e45d' 
+    },
+    { 
+      title: 'Foundational C# with Microsoft', 
+      description: 'Cybersecurity',
+      imageUrl: 'https://cyrixninja.s3.us-east-1.amazonaws.com/Portfolio/Certificates/Foundational+C%23+with+Microsoft.png',
+      link: 'https://freecodecamp.org/certification/cyrixninja/foundational-c-sharp-with-microsoft' 
+    },
+    { 
+      title: 'Data Engineering, Big Data, and Machine Learning on GCP', 
+      description: 'Cybersecurity',
+      imageUrl: 'https://cyrixninja.s3.us-east-1.amazonaws.com/Portfolio/Certificates/Data+Engineering%2C+Big+Data%2C+and+Machine+Learning+on+GCP.png',
+      link: 'https://coursera.org/share/489376a21e2fd26cb123f8960d48bc00' 
+    },
+  ]
+
+  return (
+    <section className="py-20">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1, transition: { duration: 0.8 } },
+        }}
+      >
+        <h2 className="text-3xl font-bold mb-8 text-center">Certificates</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {certificates.map((certificate, index) => (
+            <motion.div
+              key={index}
+              className="bg-gray-800 p-6 rounded-lg cursor-pointer"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ 
+                scale: 1.05, 
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+                transition: { duration: 0.2 }
+              }}
+            >
+              <a href={certificate.link} target="_blank" rel="noopener noreferrer">
+                <div className="relative h-48 w-full mb-4">
+                  <Image
+                    src={certificate.imageUrl}
+                    alt={certificate.title}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-white">{certificate.title}</h3>
+                <p className="text-gray-400">{certificate.description}</p>
+              </a>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </section>
   )
